@@ -5,3 +5,7 @@ function removeEveryOther(arr){
   }
   return res;
 }
+
+
+// short
+const removeEveryOther = arr => arr.filter((item, i) => i % 2 == 0);
