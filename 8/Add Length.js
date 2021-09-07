@@ -6,3 +6,8 @@ function addLength(str) {
   }
   return res;
 }
+
+// shorter
+function addLength(str) {
+  return str.split(' ').map(e => `${e} ${e.length}`);
+}
