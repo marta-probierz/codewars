@@ -8,3 +8,17 @@ function getDrinkByProfession(param){
     else if (res === 'rapper') return "Cristal";
     else return "Beer";
 }
+
+// obj
+function getDrinkByProfession(param){
+let res = param.toLowerCase();
+const drinks = {
+  "jabroni": "Patron Tequila",
+  "school counselor": "Anything with Alcohol",
+  "programmer": "Hipster Craft Beer",
+  "bike gang member": "Moonshine",
+  "politician": "Your tax dollars",
+  "rapper": "Cristal"
+}
+return drinks[res] || 'Beer'
+}
