@@ -5,3 +5,8 @@ function smallEnough(a, limit){
   }
   return true;
 }
+
+// shorter
+function smallEnough(a, limit){
+  return a.every(e => e <= limit);
+}
