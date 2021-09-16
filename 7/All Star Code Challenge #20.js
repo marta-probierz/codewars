@@ -13,3 +13,13 @@ function addArrays(array1, array2) {
     return res;
   }
 }
+
+
+// shorter
+function addArrays(array1, array2) {
+  if (array1.length !== array2.length) {
+    return error;
+  } else {
+    return array1.map((a,i) => array1[i] + array2[i]);
+  }
+}
