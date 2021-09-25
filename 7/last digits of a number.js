@@ -12,3 +12,8 @@ function lastDigit(n, d) {
     return tot;
     }
 }
+
+// shorter
+function lastDigit(n, d) {
+  return d > 0 ? [...n+""].slice(-d).map(x => +x) : [];
+}
