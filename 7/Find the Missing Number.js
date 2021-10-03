@@ -8,3 +8,13 @@ function missingNo(n) {
   })
   return res[0] === undefined ? 100 : res[0];
 }
+
+// or
+function missingNo(nums) {
+  let arr = [];
+  for (let i = 0; i <= 100; i ++) {
+    if (nums.indexOf(i) < 0) {
+      return i;
+    }
+  }
+}
