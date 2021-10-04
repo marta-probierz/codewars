@@ -3,3 +3,6 @@ function add(a) {
     return a+b;
   }
 }
+
+// one line
+const add = a => b => a+b;
