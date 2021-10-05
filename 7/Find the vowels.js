@@ -8,3 +8,14 @@ function vowelIndices(word){
   }
   return res;
 }
+
+// shorter
+function vowelIndices(word){
+  let res = [];
+  for(let i = 0; i < word.length; i++) {
+    if(/[aeioyu]/gi.test(word[i])) {
+      res.push(i + 1);
+    }
+  }
+  return res;
+}
