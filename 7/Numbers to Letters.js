@@ -6,3 +6,7 @@ function switcher(x){
   })
   return str;
 }
+
+// shorter
+let letters = ' zyxwvutsrqponmlkjihgfedcba!? ';
+let switcher = x => x.map(e => letters[e]).join('');
