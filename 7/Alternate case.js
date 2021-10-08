@@ -9,3 +9,8 @@ let str = '';
   }
   return str; 
 }
+
+// shorter
+function alternateCase(s) {
+  return s.split("").map(e => e === e.toUpperCase()? e.toLowerCase() : e.toUpperCase()).join('');
+}
