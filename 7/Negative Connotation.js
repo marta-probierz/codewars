@@ -1,4 +1,5 @@
 // not clever
+
 function connotation(str) {
   let firstCount = 0;
   let secondCount = 0;
@@ -10,5 +11,18 @@ function connotation(str) {
       secondCount++;
     }
   }
+  return firstCount >= secondCount;
+}
+
+
+// more clever
+
+function connotation(str) {
+  let firstCount = 0;
+  let secondCount = 0;
+  str.toLowerCase().split(' ').forEach(el => {
+    if (el.charAt(0).match(/[a-m]/)) firstCount++;
+    if (el.charAt(0).match(/[n-z]/)) secondCount++;
+  });
   return firstCount >= secondCount;
 }
