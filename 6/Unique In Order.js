@@ -6,3 +6,9 @@ function uniqueInOrder(iterable){
 
   return unique;
 }
+
+
+// shorter
+var uniqueInOrder=function(iterable){
+    return [...iterable].filter((a, i) => a !== iterable[i-1])
+}
