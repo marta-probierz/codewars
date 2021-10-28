@@ -4,3 +4,6 @@ function none(arr, fun){
 
 // shorter 
 const none = (arr, fun) => arr.some(fun) ? false : true;
+
+// the shortest
+const none = (arr, fun) => !arr.some(fun);
