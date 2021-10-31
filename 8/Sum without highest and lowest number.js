@@ -26,3 +26,5 @@ function sumArray(array) {
 }
 
 
+// one line
+const sumArray = array => array ? array.sort((a,b) => a - b).slice(1,-1).reduce((sum, e) => sum + e, 0) : 0;
