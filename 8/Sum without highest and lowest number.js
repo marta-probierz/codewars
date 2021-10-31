@@ -17,3 +17,12 @@ function sumArray(array) {
         return total;
     }
 }
+
+
+
+// shorter
+function sumArray(array) {
+  return array ? array.sort((a,b) => a - b).slice(1,-1).reduce((sum, e) => sum + e, 0) : 0;
+}
+
+
