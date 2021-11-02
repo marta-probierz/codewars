@@ -4,3 +4,6 @@ var FilterString = function(value) {
 
 // one line
 var FilterString = value => parseInt(value.replace(/[a-z]/gi,''))
+
+// or
+var FilterString = value => Number(value.replace(/[a-z]/gi,''));
