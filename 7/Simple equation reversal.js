@@ -7,3 +7,6 @@ function solve(eq){
 function solve(eq){
     return eq.split(/\b/g).reverse().join("");
 }
+
+// one line
+const solve = eq => eq.split(/\b/g).reverse().join("");
