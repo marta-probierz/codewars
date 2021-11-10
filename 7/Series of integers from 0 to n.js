@@ -5,3 +5,6 @@ function generateIntegers(n) {
   }
   return res;
 }
+
+// one line
+const generateIntegers = (n) => [...Array(n + 1).keys()];
