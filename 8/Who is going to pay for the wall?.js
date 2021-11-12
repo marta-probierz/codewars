@@ -5,3 +5,6 @@ function whoIsPaying(name){
     return [name];
   }
 }
+
+// one line
+const whoIsPaying = name => (name.length > 2) ? [name].concat([`${name[0]}${name[1]}`]) : [name];
