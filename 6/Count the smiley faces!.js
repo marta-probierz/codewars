@@ -6,3 +6,6 @@ function countSmileys(arr) {
 function countSmileys(arr) {
   return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
 }
+
+// one line
+const countSmileys = arr => arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
