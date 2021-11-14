@@ -6,3 +6,6 @@ function findOdd(A) {
     }
   }
 }
+
+// one line
+const findOdd = (A) => A.reduce((a, b) => a ^ b);
