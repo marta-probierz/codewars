@@ -6,3 +6,6 @@ function remove(s,n){
   }
   return input;
 }
+
+// one line
+const remove = (s, n) => s.replace(/!/g, e => n-- > 0 ? `` : e);
