@@ -6,3 +6,6 @@ function trueOrFalse(val){
     return 'false';
   } 
 }
+
+// one line
+const trueOrFalse = val => val ? 'true' : 'false';
