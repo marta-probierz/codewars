@@ -3,3 +3,6 @@ function saleHotdogs(n){
   else if (n >= 5 && n < 10) return n*95;
   else if (n >= 10) return n*90;
 }
+
+// one line 
+const saleHotdogs = n => n * (n < 5 ? 100 : n < 10 ? 95 : 90);
