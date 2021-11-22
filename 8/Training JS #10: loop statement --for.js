@@ -9,3 +9,13 @@ function pickIt(arr){
   }
   return [odd, even];
 }
+
+
+// or
+function pickIt(arr){
+  var odd=[],even=[];
+  for(var x of arr) {
+    (x % 2 === 0 ? even : odd).push(x)
+  }
+  return [odd,even];
+}
