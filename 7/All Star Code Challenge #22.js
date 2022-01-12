@@ -4,6 +4,13 @@ function toTime(seconds) {
      h+=1;
      seconds-=3600;
    }
-   let sec = Math.trunc(seconds/60)
-   return `${h} hour(s) and ${sec} minute(s)`
+   let sec = Math.trunc(seconds/60);
+   return `${h} hour(s) and ${sec} minute(s)`;
  }
+
+// or
+function toTime(time) {
+  let h = Math.floor(time / 3600);
+  let m = Math.floor(time % 3600 / 60);
+  return h + " hour(s) and " + m + " minute(s)";
+}
