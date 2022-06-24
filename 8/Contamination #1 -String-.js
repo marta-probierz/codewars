@@ -1,0 +1,1 @@
+const contamination = (text, char) => text.split('').map((e) => e.replace(e, char)).join('');
