@@ -1,0 +1,1 @@
+const getNumberFromString = (s) => Number(s.replace(/\D/g, ""));
