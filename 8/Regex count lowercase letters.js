@@ -1,0 +1,1 @@
+const lowercaseCount = s => s.length - s.replace(/[a-z]/g, '').length; 
